@@ -8,13 +8,6 @@
 import Foundation
 import Combine
 
-struct SimplePost: Decodable, Identifiable, Hashable {
-  var id: Int
-  var title: String
-  var body: String
-}
-
-
 enum DataLoader {
   static func loadPosts(from url: URL) -> AnyPublisher<[SimplePost], Error> {
     URLSession.shared.dataTaskPublisher(for: url)
@@ -29,7 +22,7 @@ class DataManager: ObservableObject {
   @Published private(set) var posts = [SimplePost]()
   private var token: Cancellable?
 
-  func loadStores() {
+  func loadPosts() {
     let path = "https://jsonplaceholder.typicode.com/posts"
     token?.cancel()
 

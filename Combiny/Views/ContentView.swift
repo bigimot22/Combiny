@@ -18,7 +18,7 @@ struct ContentView: View {
           PostRow(post: post)
         }
         .onAppear {
-          self.dataManager.loadStores()
+          self.dataManager.loadPosts()
           print("onAppear: \(self.dataManager.posts.count)")
         }
       .navigationBarTitle("Main")
