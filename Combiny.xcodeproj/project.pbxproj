@@ -60,12 +60,12 @@
 		6953E43124C738EE0015EFA5 /* Combiny */ = {
 			isa = PBXGroup;
 			children = (
+				6953E44D24C8329B0015EFA5 /* Model */,
 				6953E44824C82F720015EFA5 /* Views */,
-				6953E43224C738EE0015EFA5 /* AppDelegate.swift */,
-				6953E43424C738EE0015EFA5 /* SceneDelegate.swift */,
-				6953E43624C738EE0015EFA5 /* ContentView.swift */,
+				6953E44E24C8337E0015EFA5 /* Extensions */,
+				6953E44C24C8328F0015EFA5 /* Resources */,
+				6953E44B24C831D00015EFA5 /* Supporting Files */,
 				6953E44624C739290015EFA5 /* DataManager.swift */,
-				6953E43824C738F70015EFA5 /* Assets.xcassets */,
 				6953E43D24C738F70015EFA5 /* LaunchScreen.storyboard */,
 				6953E44024C738F70015EFA5 /* Info.plist */,
 				6953E43A24C738F70015EFA5 /* Preview Content */,
@@ -85,8 +85,40 @@
 			isa = PBXGroup;
 			children = (
 				6953E44924C82F8B0015EFA5 /* PostRow.swift */,
+				6953E43624C738EE0015EFA5 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6953E44B24C831D00015EFA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6953E43224C738EE0015EFA5 /* AppDelegate.swift */,
+				6953E43424C738EE0015EFA5 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6953E44C24C8328F0015EFA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6953E43824C738F70015EFA5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6953E44D24C8329B0015EFA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6953E44E24C8337E0015EFA5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
