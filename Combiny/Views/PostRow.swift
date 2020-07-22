@@ -40,6 +40,13 @@ struct PostRow: View {
         }
 
         Text(post.body)
+        Divider()
+        HStack {
+          Spacer()
+          Text(post.timestamp.timeAgo()) //  ?? "Some time ago"
+            .font(.caption)
+            .foregroundColor(Color(UIColor.systemGray2))
+        }
       }
       .padding()
     }

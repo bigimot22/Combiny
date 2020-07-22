@@ -29,7 +29,7 @@ class DataManager: ObservableObject {
     let url = URL(string: path)!
     token = DataLoader.loadPosts(from: url)
       .sink(receiveCompletion: { print("receiveCompletion: \($0)") }, receiveValue: { [weak self] result in
-      self?.posts = result
+        self?.posts = result
         print("receiveValue count: \(result.count)") })
   }
 
